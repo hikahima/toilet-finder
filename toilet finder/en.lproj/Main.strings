@@ -1,0 +1,12 @@
+
+/* Class = "UINavigationItem"; title = "Current Place on a Map"; ObjectID = "GD1-2H-ihf"; */
+"GD1-2H-ihf.title" = "Current Place on a Map";
+
+/* Class = "UIBarButtonItem"; title = "Get Place"; ObjectID = "PNt-wg-a1x"; */
+"PNt-wg-a1x.title" = "Get Place";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "bAD-OB-5hV"; */
+"bAD-OB-5hV.title" = "Back";
+
+/* Class = "UINavigationItem"; title = "Choose a place"; ObjectID = "xtL-Jg-JnU"; */
+"xtL-Jg-JnU.title" = "Choose a place";

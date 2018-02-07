@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Verdana.ttf">
+            <string>Verdana</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="toilet finder" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w7o-Hu-nUB">
+                                <rect key="frame" x="0.0" y="28" width="414" height="61"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="50"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="oDU-S7-j71">
+                                <rect key="frame" x="0.0" y="97" width="414" height="287"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="287" id="2b1-mA-Bx6"/>
+                                </constraints>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="aurin.png" translatesAutoresizingMaskIntoConstraints="NO" id="lqK-td-uNO">
+                                <rect key="frame" x="20" y="565" width="180" height="66"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="designed by Yanfei Li" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eb0-l4-V9J">
+                                <rect key="frame" x="0.0" y="467" width="414" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="tnx-TN-O76"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="unimelb.png" translatesAutoresizingMaskIntoConstraints="NO" id="oah-SV-MUf">
+                                <rect key="frame" x="274" y="538" width="120" height="121"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66087633369557808" green="1" blue="0.71725322686146309" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oah-SV-MUf" firstAttribute="centerY" secondItem="lqK-td-uNO" secondAttribute="centerY" id="3c8-FZ-zrQ"/>
+                            <constraint firstItem="w7o-Hu-nUB" firstAttribute="top" secondItem="JhR-tK-Xfa" secondAttribute="top" constant="8" id="7kg-ct-ID5"/>
+                            <constraint firstItem="eb0-l4-V9J" firstAttribute="trailing" secondItem="oDU-S7-j71" secondAttribute="trailing" id="Fpo-D5-JQd"/>
+                            <constraint firstItem="JhR-tK-Xfa" firstAttribute="bottom" secondItem="lqK-td-uNO" secondAttribute="bottom" constant="105" id="IaD-4n-Lez"/>
+                            <constraint firstItem="oDU-S7-j71" firstAttribute="trailing" secondItem="w7o-Hu-nUB" secondAttribute="trailing" id="J4H-BR-J32"/>
+                            <constraint firstItem="eb0-l4-V9J" firstAttribute="leading" secondItem="oDU-S7-j71" secondAttribute="leading" id="NE5-Yk-POV"/>
+                            <constraint firstAttribute="trailing" secondItem="w7o-Hu-nUB" secondAttribute="trailing" id="NXw-Dx-KvT"/>
+                            <constraint firstItem="oDU-S7-j71" firstAttribute="leading" secondItem="w7o-Hu-nUB" secondAttribute="leading" id="U8Y-Iq-jre"/>
+                            <constraint firstItem="oDU-S7-j71" firstAttribute="top" secondItem="w7o-Hu-nUB" secondAttribute="bottom" constant="8" id="ebE-Le-ev4"/>
+                            <constraint firstItem="oah-SV-MUf" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="ghH-7c-VgR"/>
+                            <constraint firstItem="lqK-td-uNO" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="hUU-A7-Dqb"/>
+                            <constraint firstItem="oDU-S7-j71" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="iXC-iX-D60"/>
+                            <constraint firstItem="oah-SV-MUf" firstAttribute="top" secondItem="eb0-l4-V9J" secondAttribute="bottom" constant="40" id="yjL-pg-sjH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JhR-tK-Xfa"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="49.275362318840585" y="373.36956521739131"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="aurin.png" width="180" height="66"/>
+        <image name="logo.png" width="200" height="208"/>
+        <image name="unimelb.png" width="120" height="121"/>
+    </resources>
+</document>

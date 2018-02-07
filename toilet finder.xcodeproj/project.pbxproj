@@ -1,0 +1,824 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		62C4CE79F8CE5AC934524276 /* libPods-toilet finder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 059E7CFCEBFCD394217D8027 /* libPods-toilet finder.a */; };
+		FE0415D520294A8800272245 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FE0415D420294A8700272245 /* logo.png */; };
+		FE04CE142005D02D0023DA4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE04CE132005D02D0023DA4A /* AppDelegate.swift */; };
+		FE04CE192005D02D0023DA4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE04CE172005D02D0023DA4A /* Main.storyboard */; };
+		FE04CE1B2005D02D0023DA4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE04CE1A2005D02D0023DA4A /* Assets.xcassets */; };
+		FE04CE1E2005D02D0023DA4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE04CE1C2005D02D0023DA4A /* LaunchScreen.storyboard */; };
+		FE04CE292005D02D0023DA4A /* toilet_finderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE04CE282005D02D0023DA4A /* toilet_finderTests.swift */; };
+		FE04CE342005D02D0023DA4A /* toilet_finderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE04CE332005D02D0023DA4A /* toilet_finderUITests.swift */; };
+		FE04CE4D2005D1A10023DA4A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE04CE4C2005D1A10023DA4A /* AVFoundation.framework */; };
+		FE04CE4F2005D1AA0023DA4A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE04CE4E2005D1AA0023DA4A /* CoreData.framework */; };
+		FE04CE512005D1B40023DA4A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE04CE502005D1B40023DA4A /* CoreLocation.framework */; };
+		FE04CE532005D1BA0023DA4A /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE04CE522005D1BA0023DA4A /* GLKit.framework */; };
+		FE04CE552005D1C20023DA4A /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE04CE542005D1C20023DA4A /* ImageIO.framework */; };
+		FE04CE572005D1CC0023DA4A /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FE04CE562005D1CC0023DA4A /* libc++.tbd */; };
+		FE04CE592005D1E20023DA4A /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FE04CE582005D1E20023DA4A /* libicucore.tbd */; };
+		FE04CE5B2005D1F50023DA4A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FE04CE5A2005D1F50023DA4A /* libz.tbd */; };
+		FE04CE5D2005D1FA0023DA4A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE04CE5C2005D1FA0023DA4A /* OpenGLES.framework */; };
+		FE04CE5F2005D2020023DA4A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE04CE5E2005D2020023DA4A /* QuartzCore.framework */; };
+		FE04CE612005D2090023DA4A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE04CE602005D2090023DA4A /* SystemConfiguration.framework */; };
+		FE081DE52016CF7D00ED32F1 /* infoWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE081DE42016CF7D00ED32F1 /* infoWindow.swift */; };
+		FE0E818A200C43EF006ABDDD /* toilet.json in Resources */ = {isa = PBXBuildFile; fileRef = FE0E8189200C43EF006ABDDD /* toilet.json */; };
+		FE4C1D4F2016EC9200D1073C /* infoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE4C1D4E2016EC9200D1073C /* infoWindow.xib */; };
+		FE594EA6200CA0C100B4C071 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE594EA5200CA0C100B4C071 /* ViewController.swift */; };
+		FE6CE630201DC39E00975F09 /* unimelb.png in Resources */ = {isa = PBXBuildFile; fileRef = FE6CE62F201DC39E00975F09 /* unimelb.png */; };
+		FE7B4CB3201DC11F00EB756F /* aurin.png in Resources */ = {isa = PBXBuildFile; fileRef = FE7B4CB2201DC11F00EB756F /* aurin.png */; };
+		FE90CEC8200DA45500BBFAE6 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FE90CEC7200DA45400BBFAE6 /* GoogleMaps.bundle */; };
+		FEADBAE7202412C60090FFAE /* GooglePlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE99D254200C6F2700FBD8EB /* GooglePlaces.framework */; };
+		FEB49CA82006002B008760E3 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEB49CA72006002B008760E3 /* CoreBluetooth.framework */; };
+		FEB49CAA20060195008760E3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEB49CA920060195008760E3 /* Security.framework */; };
+		FEB49CAC200601A9008760E3 /* libobjc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FEB49CAB200601A9008760E3 /* libobjc.tbd */; };
+		FEB49CAE200601DD008760E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEB49CAD200601DD008760E3 /* Foundation.framework */; };
+		FEC1D11C200DC92700B245F3 /* GoogleMapsBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE90CEC1200DA39000BBFAE6 /* GoogleMapsBase.framework */; };
+		FEC1D11D200DC94800B245F3 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE90CEC3200DA3A400BBFAE6 /* GoogleMaps.framework */; };
+		FEC1D11E200DC94800B245F3 /* GoogleMapsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE90CEC4200DA3A400BBFAE6 /* GoogleMapsCore.framework */; };
+		FEC4478E2005D7AB00070411 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC4478D2005D7AB00070411 /* CoreText.framework */; };
+		FEC447902005D7BF00070411 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC4478F2005D7BF00070411 /* UIKit.framework */; };
+		FEC447922005D7D700070411 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC447912005D7D700070411 /* CoreGraphics.framework */; };
+		FEC447942005D7EB00070411 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC447932005D7EB00070411 /* Accelerate.framework */; };
+		FEEA4D5E2019780200AAD249 /* OptionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEA4D5D2019780200AAD249 /* OptionsController.swift */; };
+		FEEBB0A7201D5DA1009851E8 /* directions.png in Resources */ = {isa = PBXBuildFile; fileRef = FEEBB0A6201D5DA1009851E8 /* directions.png */; };
+		FEEBB0A9201D610A009851E8 /* female.png in Resources */ = {isa = PBXBuildFile; fileRef = FEEBB0A8201D610A009851E8 /* female.png */; };
+		FEEBB0AB201D6111009851E8 /* male.png in Resources */ = {isa = PBXBuildFile; fileRef = FEEBB0AA201D6110009851E8 /* male.png */; };
+		FEEBB0AD201D6117009851E8 /* unisex.png in Resources */ = {isa = PBXBuildFile; fileRef = FEEBB0AC201D6117009851E8 /* unisex.png */; };
+		FEEBB0AF201D6F2F009851E8 /* options.png in Resources */ = {isa = PBXBuildFile; fileRef = FEEBB0AE201D6F2F009851E8 /* options.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE04CE252005D02D0023DA4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE04CE082005D02D0023DA4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE04CE0F2005D02D0023DA4A;
+			remoteInfo = "toilet finder";
+		};
+		FE04CE302005D02D0023DA4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE04CE082005D02D0023DA4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE04CE0F2005D02D0023DA4A;
+			remoteInfo = "toilet finder";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		059E7CFCEBFCD394217D8027 /* libPods-toilet finder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-toilet finder.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B63D76C5A918E3D4DB4467F2 /* Pods-toilet finder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-toilet finder.release.xcconfig"; path = "Pods/Target Support Files/Pods-toilet finder/Pods-toilet finder.release.xcconfig"; sourceTree = "<group>"; };
+		FE0415D420294A8700272245 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		FE04CE102005D02D0023DA4A /* toilet finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "toilet finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE04CE132005D02D0023DA4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FE04CE182005D02D0023DA4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE04CE1A2005D02D0023DA4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE04CE1D2005D02D0023DA4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE04CE1F2005D02D0023DA4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE04CE242005D02D0023DA4A /* toilet finderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "toilet finderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE04CE282005D02D0023DA4A /* toilet_finderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toilet_finderTests.swift; sourceTree = "<group>"; };
+		FE04CE2A2005D02D0023DA4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE04CE2F2005D02D0023DA4A /* toilet finderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "toilet finderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE04CE332005D02D0023DA4A /* toilet_finderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toilet_finderUITests.swift; sourceTree = "<group>"; };
+		FE04CE352005D02D0023DA4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE04CE4C2005D1A10023DA4A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FE04CE4E2005D1AA0023DA4A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FE04CE502005D1B40023DA4A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FE04CE522005D1BA0023DA4A /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		FE04CE542005D1C20023DA4A /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		FE04CE562005D1CC0023DA4A /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		FE04CE582005D1E20023DA4A /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		FE04CE5A2005D1F50023DA4A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		FE04CE5C2005D1FA0023DA4A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		FE04CE5E2005D2020023DA4A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FE04CE602005D2090023DA4A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FE081DE42016CF7D00ED32F1 /* infoWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoWindow.swift; sourceTree = "<group>"; };
+		FE0E8189200C43EF006ABDDD /* toilet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = toilet.json; sourceTree = SOURCE_ROOT; };
+		FE4C1D4E2016EC9200D1073C /* infoWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = infoWindow.xib; sourceTree = "<group>"; };
+		FE594EA5200CA0C100B4C071 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FE6CE62F201DC39E00975F09 /* unimelb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unimelb.png; sourceTree = "<group>"; };
+		FE7A72652009BE7100583925 /* libGoogle-Maps-iOS-Utils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libGoogle-Maps-iOS-Utils.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE7B4CB2201DC11F00EB756F /* aurin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aurin.png; sourceTree = "<group>"; };
+		FE90CEC1200DA39000BBFAE6 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		FE90CEC3200DA3A400BBFAE6 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		FE90CEC4200DA3A400BBFAE6 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Pods/GoogleMaps/Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		FE90CEC7200DA45400BBFAE6 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = SOURCE_ROOT; };
+		FE99D254200C6F2700FBD8EB /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Pods/GooglePlaces/Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
+		FE99D256200C6F3A00FBD8EB /* GooglePlacePicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlacePicker.framework; path = Pods/GooglePlacePicker/Frameworks/GooglePlacePicker.framework; sourceTree = "<group>"; };
+		FEB49CA42005FCEA008760E3 /* toilet finder-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "toilet finder-Bridging-Header.h"; sourceTree = "<group>"; };
+		FEB49CA72006002B008760E3 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		FEB49CA920060195008760E3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FEB49CAB200601A9008760E3 /* libobjc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libobjc.tbd; path = usr/lib/libobjc.tbd; sourceTree = SDKROOT; };
+		FEB49CAD200601DD008760E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FEC4478D2005D7AB00070411 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		FEC4478F2005D7BF00070411 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FEC447912005D7D700070411 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FEC447932005D7EB00070411 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		FEEA4D5D2019780200AAD249 /* OptionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsController.swift; sourceTree = "<group>"; };
+		FEEBB0A6201D5DA1009851E8 /* directions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = directions.png; sourceTree = "<group>"; };
+		FEEBB0A8201D610A009851E8 /* female.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = female.png; sourceTree = "<group>"; };
+		FEEBB0AA201D6110009851E8 /* male.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = male.png; sourceTree = "<group>"; };
+		FEEBB0AC201D6117009851E8 /* unisex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unisex.png; sourceTree = "<group>"; };
+		FEEBB0AE201D6F2F009851E8 /* options.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = options.png; sourceTree = "<group>"; };
+		FFBCF5E85D00FF0AAB595B47 /* Pods-toilet finder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-toilet finder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-toilet finder/Pods-toilet finder.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE04CE0D2005D02D0023DA4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEADBAE7202412C60090FFAE /* GooglePlaces.framework in Frameworks */,
+				FEC1D11D200DC94800B245F3 /* GoogleMaps.framework in Frameworks */,
+				FEC1D11E200DC94800B245F3 /* GoogleMapsCore.framework in Frameworks */,
+				FEC1D11C200DC92700B245F3 /* GoogleMapsBase.framework in Frameworks */,
+				FE04CE5D2005D1FA0023DA4A /* OpenGLES.framework in Frameworks */,
+				FEB49CAE200601DD008760E3 /* Foundation.framework in Frameworks */,
+				FEB49CAC200601A9008760E3 /* libobjc.tbd in Frameworks */,
+				FEB49CAA20060195008760E3 /* Security.framework in Frameworks */,
+				FEB49CA82006002B008760E3 /* CoreBluetooth.framework in Frameworks */,
+				FEC447942005D7EB00070411 /* Accelerate.framework in Frameworks */,
+				FEC447922005D7D700070411 /* CoreGraphics.framework in Frameworks */,
+				FEC447902005D7BF00070411 /* UIKit.framework in Frameworks */,
+				FEC4478E2005D7AB00070411 /* CoreText.framework in Frameworks */,
+				FE04CE612005D2090023DA4A /* SystemConfiguration.framework in Frameworks */,
+				FE04CE5F2005D2020023DA4A /* QuartzCore.framework in Frameworks */,
+				FE04CE5B2005D1F50023DA4A /* libz.tbd in Frameworks */,
+				FE04CE592005D1E20023DA4A /* libicucore.tbd in Frameworks */,
+				FE04CE572005D1CC0023DA4A /* libc++.tbd in Frameworks */,
+				FE04CE552005D1C20023DA4A /* ImageIO.framework in Frameworks */,
+				FE04CE532005D1BA0023DA4A /* GLKit.framework in Frameworks */,
+				FE04CE512005D1B40023DA4A /* CoreLocation.framework in Frameworks */,
+				FE04CE4F2005D1AA0023DA4A /* CoreData.framework in Frameworks */,
+				FE04CE4D2005D1A10023DA4A /* AVFoundation.framework in Frameworks */,
+				62C4CE79F8CE5AC934524276 /* libPods-toilet finder.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE04CE212005D02D0023DA4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE04CE2C2005D02D0023DA4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95F0B080508E348DF5563906 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FFBCF5E85D00FF0AAB595B47 /* Pods-toilet finder.debug.xcconfig */,
+				B63D76C5A918E3D4DB4467F2 /* Pods-toilet finder.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FE04CE072005D02D0023DA4A = {
+			isa = PBXGroup;
+			children = (
+				FE04CE122005D02D0023DA4A /* toilet finder */,
+				FE04CE272005D02D0023DA4A /* toilet finderTests */,
+				FE04CE322005D02D0023DA4A /* toilet finderUITests */,
+				FE04CE112005D02D0023DA4A /* Products */,
+				FE04CE4B2005D1A10023DA4A /* Frameworks */,
+				FEB49CA42005FCEA008760E3 /* toilet finder-Bridging-Header.h */,
+				95F0B080508E348DF5563906 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		FE04CE112005D02D0023DA4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE04CE102005D02D0023DA4A /* toilet finder.app */,
+				FE04CE242005D02D0023DA4A /* toilet finderTests.xctest */,
+				FE04CE2F2005D02D0023DA4A /* toilet finderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE04CE122005D02D0023DA4A /* toilet finder */ = {
+			isa = PBXGroup;
+			children = (
+				FE04CE132005D02D0023DA4A /* AppDelegate.swift */,
+				FE594EA5200CA0C100B4C071 /* ViewController.swift */,
+				FEEA4D5D2019780200AAD249 /* OptionsController.swift */,
+				FE081DE42016CF7D00ED32F1 /* infoWindow.swift */,
+				FE4C1D4E2016EC9200D1073C /* infoWindow.xib */,
+				FE04CE172005D02D0023DA4A /* Main.storyboard */,
+				FE04CE1A2005D02D0023DA4A /* Assets.xcassets */,
+				FE04CE1C2005D02D0023DA4A /* LaunchScreen.storyboard */,
+				FE04CE1F2005D02D0023DA4A /* Info.plist */,
+				FEEBB0A5201D5CF0009851E8 /* icon */,
+				FE90CEC7200DA45400BBFAE6 /* GoogleMaps.bundle */,
+				FE0E8189200C43EF006ABDDD /* toilet.json */,
+			);
+			path = "toilet finder";
+			sourceTree = "<group>";
+		};
+		FE04CE272005D02D0023DA4A /* toilet finderTests */ = {
+			isa = PBXGroup;
+			children = (
+				FE04CE282005D02D0023DA4A /* toilet_finderTests.swift */,
+				FE04CE2A2005D02D0023DA4A /* Info.plist */,
+			);
+			path = "toilet finderTests";
+			sourceTree = "<group>";
+		};
+		FE04CE322005D02D0023DA4A /* toilet finderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FE04CE332005D02D0023DA4A /* toilet_finderUITests.swift */,
+				FE04CE352005D02D0023DA4A /* Info.plist */,
+			);
+			path = "toilet finderUITests";
+			sourceTree = "<group>";
+		};
+		FE04CE4B2005D1A10023DA4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE90CEC3200DA3A400BBFAE6 /* GoogleMaps.framework */,
+				FE90CEC4200DA3A400BBFAE6 /* GoogleMapsCore.framework */,
+				FE90CEC1200DA39000BBFAE6 /* GoogleMapsBase.framework */,
+				FE99D256200C6F3A00FBD8EB /* GooglePlacePicker.framework */,
+				FE99D254200C6F2700FBD8EB /* GooglePlaces.framework */,
+				FE7A72652009BE7100583925 /* libGoogle-Maps-iOS-Utils.a */,
+				FEB49CAD200601DD008760E3 /* Foundation.framework */,
+				FEB49CAB200601A9008760E3 /* libobjc.tbd */,
+				FEB49CA920060195008760E3 /* Security.framework */,
+				FEB49CA72006002B008760E3 /* CoreBluetooth.framework */,
+				FEC447932005D7EB00070411 /* Accelerate.framework */,
+				FEC447912005D7D700070411 /* CoreGraphics.framework */,
+				FEC4478F2005D7BF00070411 /* UIKit.framework */,
+				FEC4478D2005D7AB00070411 /* CoreText.framework */,
+				FE04CE602005D2090023DA4A /* SystemConfiguration.framework */,
+				FE04CE5E2005D2020023DA4A /* QuartzCore.framework */,
+				FE04CE5C2005D1FA0023DA4A /* OpenGLES.framework */,
+				FE04CE5A2005D1F50023DA4A /* libz.tbd */,
+				FE04CE582005D1E20023DA4A /* libicucore.tbd */,
+				FE04CE562005D1CC0023DA4A /* libc++.tbd */,
+				FE04CE542005D1C20023DA4A /* ImageIO.framework */,
+				FE04CE522005D1BA0023DA4A /* GLKit.framework */,
+				FE04CE502005D1B40023DA4A /* CoreLocation.framework */,
+				FE04CE4E2005D1AA0023DA4A /* CoreData.framework */,
+				FE04CE4C2005D1A10023DA4A /* AVFoundation.framework */,
+				059E7CFCEBFCD394217D8027 /* libPods-toilet finder.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEEBB0A5201D5CF0009851E8 /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				FEEBB0AE201D6F2F009851E8 /* options.png */,
+				FEEBB0A6201D5DA1009851E8 /* directions.png */,
+				FEEBB0A8201D610A009851E8 /* female.png */,
+				FE6CE62F201DC39E00975F09 /* unimelb.png */,
+				FE0415D420294A8700272245 /* logo.png */,
+				FEEBB0AA201D6110009851E8 /* male.png */,
+				FEEBB0AC201D6117009851E8 /* unisex.png */,
+				FE7B4CB2201DC11F00EB756F /* aurin.png */,
+			);
+			name = icon;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE04CE0F2005D02D0023DA4A /* toilet finder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE04CE382005D02D0023DA4A /* Build configuration list for PBXNativeTarget "toilet finder" */;
+			buildPhases = (
+				3AFF3C4EE4AAA7E3F8DB1B72 /* [CP] Check Pods Manifest.lock */,
+				FE04CE0C2005D02D0023DA4A /* Sources */,
+				FE04CE0D2005D02D0023DA4A /* Frameworks */,
+				FE04CE0E2005D02D0023DA4A /* Resources */,
+				5E0BA0D1674D89AF251900B0 /* [CP] Embed Pods Frameworks */,
+				343A11781FF9DCB747CF126B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "toilet finder";
+			productName = "toilet finder";
+			productReference = FE04CE102005D02D0023DA4A /* toilet finder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE04CE232005D02D0023DA4A /* toilet finderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE04CE3B2005D02D0023DA4A /* Build configuration list for PBXNativeTarget "toilet finderTests" */;
+			buildPhases = (
+				FE04CE202005D02D0023DA4A /* Sources */,
+				FE04CE212005D02D0023DA4A /* Frameworks */,
+				FE04CE222005D02D0023DA4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE04CE262005D02D0023DA4A /* PBXTargetDependency */,
+			);
+			name = "toilet finderTests";
+			productName = "toilet finderTests";
+			productReference = FE04CE242005D02D0023DA4A /* toilet finderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FE04CE2E2005D02D0023DA4A /* toilet finderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE04CE3E2005D02D0023DA4A /* Build configuration list for PBXNativeTarget "toilet finderUITests" */;
+			buildPhases = (
+				FE04CE2B2005D02D0023DA4A /* Sources */,
+				FE04CE2C2005D02D0023DA4A /* Frameworks */,
+				FE04CE2D2005D02D0023DA4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE04CE312005D02D0023DA4A /* PBXTargetDependency */,
+			);
+			name = "toilet finderUITests";
+			productName = "toilet finderUITests";
+			productReference = FE04CE2F2005D02D0023DA4A /* toilet finderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE04CE082005D02D0023DA4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Yanfei;
+				TargetAttributes = {
+					FE04CE0F2005D02D0023DA4A = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					FE04CE232005D02D0023DA4A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FE04CE0F2005D02D0023DA4A;
+					};
+					FE04CE2E2005D02D0023DA4A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FE04CE0F2005D02D0023DA4A;
+					};
+				};
+			};
+			buildConfigurationList = FE04CE0B2005D02D0023DA4A /* Build configuration list for PBXProject "toilet finder" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE04CE072005D02D0023DA4A;
+			productRefGroup = FE04CE112005D02D0023DA4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE04CE0F2005D02D0023DA4A /* toilet finder */,
+				FE04CE232005D02D0023DA4A /* toilet finderTests */,
+				FE04CE2E2005D02D0023DA4A /* toilet finderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE04CE0E2005D02D0023DA4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE04CE1E2005D02D0023DA4A /* LaunchScreen.storyboard in Resources */,
+				FE6CE630201DC39E00975F09 /* unimelb.png in Resources */,
+				FEEBB0AD201D6117009851E8 /* unisex.png in Resources */,
+				FE4C1D4F2016EC9200D1073C /* infoWindow.xib in Resources */,
+				FE0415D520294A8800272245 /* logo.png in Resources */,
+				FEEBB0AB201D6111009851E8 /* male.png in Resources */,
+				FEEBB0A7201D5DA1009851E8 /* directions.png in Resources */,
+				FE04CE1B2005D02D0023DA4A /* Assets.xcassets in Resources */,
+				FE0E818A200C43EF006ABDDD /* toilet.json in Resources */,
+				FE7B4CB3201DC11F00EB756F /* aurin.png in Resources */,
+				FE04CE192005D02D0023DA4A /* Main.storyboard in Resources */,
+				FE90CEC8200DA45500BBFAE6 /* GoogleMaps.bundle in Resources */,
+				FEEBB0AF201D6F2F009851E8 /* options.png in Resources */,
+				FEEBB0A9201D610A009851E8 /* female.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE04CE222005D02D0023DA4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE04CE2D2005D02D0023DA4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		343A11781FF9DCB747CF126B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-toilet finder/Pods-toilet finder-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-toilet finder/Pods-toilet finder-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3AFF3C4EE4AAA7E3F8DB1B72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-toilet finder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E0BA0D1674D89AF251900B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-toilet finder/Pods-toilet finder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE04CE0C2005D02D0023DA4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE081DE52016CF7D00ED32F1 /* infoWindow.swift in Sources */,
+				FE594EA6200CA0C100B4C071 /* ViewController.swift in Sources */,
+				FEEA4D5E2019780200AAD249 /* OptionsController.swift in Sources */,
+				FE04CE142005D02D0023DA4A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE04CE202005D02D0023DA4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE04CE292005D02D0023DA4A /* toilet_finderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE04CE2B2005D02D0023DA4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE04CE342005D02D0023DA4A /* toilet_finderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE04CE262005D02D0023DA4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE04CE0F2005D02D0023DA4A /* toilet finder */;
+			targetProxy = FE04CE252005D02D0023DA4A /* PBXContainerItemProxy */;
+		};
+		FE04CE312005D02D0023DA4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE04CE0F2005D02D0023DA4A /* toilet finder */;
+			targetProxy = FE04CE302005D02D0023DA4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FE04CE172005D02D0023DA4A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE04CE182005D02D0023DA4A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FE04CE1C2005D02D0023DA4A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE04CE1D2005D02D0023DA4A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE04CE362005D02D0023DA4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-Objc";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FE04CE372005D02D0023DA4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-Objc";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE04CE392005D02D0023DA4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFBCF5E85D00FF0AAB595B47 /* Pods-toilet finder.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Pods/GooglePlaces/Frameworks",
+					"$(PROJECT_DIR)/Pods/GoogleMaps/Base/Frameworks",
+					"$(PROJECT_DIR)/Pods/GoogleMaps/Maps/Frameworks",
+				);
+				INFOPLIST_FILE = "toilet finder/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-Objc";
+				PRODUCT_BUNDLE_IDENTIFIER = "Yanfei.toilet-finder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "toilet finder-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE04CE3A2005D02D0023DA4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B63D76C5A918E3D4DB4467F2 /* Pods-toilet finder.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Pods/GooglePlaces/Frameworks",
+					"$(PROJECT_DIR)/Pods/GooglePlacePicker/Frameworks",
+					"$(PROJECT_DIR)/Pods/GoogleMaps/Base/Frameworks",
+					"$(PROJECT_DIR)/Pods/GoogleMaps/Maps/Frameworks",
+				);
+				INFOPLIST_FILE = "toilet finder/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-Objc";
+				PRODUCT_BUNDLE_IDENTIFIER = "Yanfei.toilet-finder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "toilet finder-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FE04CE3C2005D02D0023DA4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "toilet finderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Yanfei.toilet-finderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/toilet finder.app/toilet finder";
+			};
+			name = Debug;
+		};
+		FE04CE3D2005D02D0023DA4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "toilet finderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Yanfei.toilet-finderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/toilet finder.app/toilet finder";
+			};
+			name = Release;
+		};
+		FE04CE3F2005D02D0023DA4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "toilet finderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Yanfei.toilet-finderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "toilet finder";
+			};
+			name = Debug;
+		};
+		FE04CE402005D02D0023DA4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "toilet finderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Yanfei.toilet-finderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "toilet finder";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE04CE0B2005D02D0023DA4A /* Build configuration list for PBXProject "toilet finder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE04CE362005D02D0023DA4A /* Debug */,
+				FE04CE372005D02D0023DA4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE04CE382005D02D0023DA4A /* Build configuration list for PBXNativeTarget "toilet finder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE04CE392005D02D0023DA4A /* Debug */,
+				FE04CE3A2005D02D0023DA4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE04CE3B2005D02D0023DA4A /* Build configuration list for PBXNativeTarget "toilet finderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE04CE3C2005D02D0023DA4A /* Debug */,
+				FE04CE3D2005D02D0023DA4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE04CE3E2005D02D0023DA4A /* Build configuration list for PBXNativeTarget "toilet finderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE04CE3F2005D02D0023DA4A /* Debug */,
+				FE04CE402005D02D0023DA4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE04CE082005D02D0023DA4A /* Project object */;
+}
