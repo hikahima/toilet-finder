@@ -21,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uny-ld-Fsz">
-                    <rect key="frame" x="0.0" y="0.0" width="245" height="50"/>
+                    <rect key="frame" x="16" y="0.0" width="213" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -78,7 +78,7 @@
                 <outlet property="parking" destination="fNj-PZ-dTh" id="QIj-aP-vuR"/>
                 <outlet property="water" destination="lc2-zJ-fHb" id="Wf3-F7-DEk"/>
             </connections>
-            <point key="canvasLocation" x="778.5" y="273"/>
+            <point key="canvasLocation" x="781.5" y="272"/>
         </view>
     </objects>
 </document>

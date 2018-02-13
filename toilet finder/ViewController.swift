@@ -70,7 +70,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate,UISearchDisplay
             showCost(from: currentPlace,to: closetPlace)
         }
     }
-    
+  
         @IBAction func getDirections(_ sender: Any) {
  // Show an alert window when user forget to choose the destination.
  // Open google.com to get directions.
@@ -132,6 +132,9 @@ class ViewController: UIViewController,CLLocationManagerDelegate,UISearchDisplay
     var searchController: UISearchController?
     var resultView: UITextView?
     
+    @IBOutlet weak var directionsButton: UIButton!
+    @IBOutlet weak var guideButton: UIButton!
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -166,13 +169,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate,UISearchDisplay
         navigationItem.titleView = searchController?.searchBar
         definesPresentationContext = true
         searchController?.hidesNavigationBarDuringPresentation = false
-        
-   // Add a directions button.
-        let directionsButton = UIButton(type: UIButtonType.system)
-        directionsButton.frame = CGRect(x: 348, y: 610, width: 50, height: 50)
-        directionsButton.setImage(UIImage(named:"directions"), for: .normal)
-        directionsButton.addTarget(self, action: #selector(ViewController.getDirections(_:)), for: .touchDown)
-        self.view.addSubview(directionsButton)
+ 
         
    // Add a lebel to show the time walking to the closet toilet.
         label.frame = CGRect(x: 0, y: 64, width: 414, height: 52)
@@ -180,6 +177,10 @@ class ViewController: UIViewController,CLLocationManagerDelegate,UISearchDisplay
         label.textColor = UIColor.blue
         label.font=UIFont.init(name:"Arial", size:30)
         self.view.addSubview(label)
+        
+        
+        self.view.addSubview(guideButton)
+        self.view.addSubview(directionsButton)
         
          readjson()
          createAllMarkers()

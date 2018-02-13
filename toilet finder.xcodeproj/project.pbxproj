@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		62C4CE79F8CE5AC934524276 /* libPods-toilet finder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 059E7CFCEBFCD394217D8027 /* libPods-toilet finder.a */; };
-		FE0415D520294A8800272245 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FE0415D420294A8700272245 /* logo.png */; };
 		FE04CE142005D02D0023DA4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE04CE132005D02D0023DA4A /* AppDelegate.swift */; };
 		FE04CE192005D02D0023DA4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE04CE172005D02D0023DA4A /* Main.storyboard */; };
 		FE04CE1B2005D02D0023DA4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE04CE1A2005D02D0023DA4A /* Assets.xcassets */; };
@@ -28,10 +27,18 @@
 		FE04CE612005D2090023DA4A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE04CE602005D2090023DA4A /* SystemConfiguration.framework */; };
 		FE081DE52016CF7D00ED32F1 /* infoWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE081DE42016CF7D00ED32F1 /* infoWindow.swift */; };
 		FE0E818A200C43EF006ABDDD /* toilet.json in Resources */ = {isa = PBXBuildFile; fileRef = FE0E8189200C43EF006ABDDD /* toilet.json */; };
+		FE26DEDC202FE0550068A7CF /* male.png in Resources */ = {isa = PBXBuildFile; fileRef = FE26DED4202FE0540068A7CF /* male.png */; };
+		FE26DEDD202FE0550068A7CF /* options.png in Resources */ = {isa = PBXBuildFile; fileRef = FE26DED5202FE0540068A7CF /* options.png */; };
+		FE26DEDE202FE0550068A7CF /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FE26DED6202FE0540068A7CF /* logo.png */; };
+		FE26DEDF202FE0550068A7CF /* female.png in Resources */ = {isa = PBXBuildFile; fileRef = FE26DED7202FE0540068A7CF /* female.png */; };
+		FE26DEE0202FE0550068A7CF /* unimelb.png in Resources */ = {isa = PBXBuildFile; fileRef = FE26DED8202FE0540068A7CF /* unimelb.png */; };
+		FE26DEE1202FE0550068A7CF /* guide.png in Resources */ = {isa = PBXBuildFile; fileRef = FE26DED9202FE0540068A7CF /* guide.png */; };
+		FE26DEE2202FE0550068A7CF /* unisex.png in Resources */ = {isa = PBXBuildFile; fileRef = FE26DEDA202FE0550068A7CF /* unisex.png */; };
+		FE26DEE3202FE0550068A7CF /* aurin.png in Resources */ = {isa = PBXBuildFile; fileRef = FE26DEDB202FE0550068A7CF /* aurin.png */; };
+		FE26DEE5202FE07F0068A7CF /* directions.png in Resources */ = {isa = PBXBuildFile; fileRef = FE26DEE4202FE07F0068A7CF /* directions.png */; };
+		FE3494E7202FFA0D000A1B11 /* guide.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE3494E6202FFA0D000A1B11 /* guide.jpg */; };
 		FE4C1D4F2016EC9200D1073C /* infoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE4C1D4E2016EC9200D1073C /* infoWindow.xib */; };
 		FE594EA6200CA0C100B4C071 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE594EA5200CA0C100B4C071 /* ViewController.swift */; };
-		FE6CE630201DC39E00975F09 /* unimelb.png in Resources */ = {isa = PBXBuildFile; fileRef = FE6CE62F201DC39E00975F09 /* unimelb.png */; };
-		FE7B4CB3201DC11F00EB756F /* aurin.png in Resources */ = {isa = PBXBuildFile; fileRef = FE7B4CB2201DC11F00EB756F /* aurin.png */; };
 		FE90CEC8200DA45500BBFAE6 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FE90CEC7200DA45400BBFAE6 /* GoogleMaps.bundle */; };
 		FEADBAE7202412C60090FFAE /* GooglePlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE99D254200C6F2700FBD8EB /* GooglePlaces.framework */; };
 		FEB49CA82006002B008760E3 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEB49CA72006002B008760E3 /* CoreBluetooth.framework */; };
@@ -46,11 +53,6 @@
 		FEC447922005D7D700070411 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC447912005D7D700070411 /* CoreGraphics.framework */; };
 		FEC447942005D7EB00070411 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC447932005D7EB00070411 /* Accelerate.framework */; };
 		FEEA4D5E2019780200AAD249 /* OptionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEA4D5D2019780200AAD249 /* OptionsController.swift */; };
-		FEEBB0A7201D5DA1009851E8 /* directions.png in Resources */ = {isa = PBXBuildFile; fileRef = FEEBB0A6201D5DA1009851E8 /* directions.png */; };
-		FEEBB0A9201D610A009851E8 /* female.png in Resources */ = {isa = PBXBuildFile; fileRef = FEEBB0A8201D610A009851E8 /* female.png */; };
-		FEEBB0AB201D6111009851E8 /* male.png in Resources */ = {isa = PBXBuildFile; fileRef = FEEBB0AA201D6110009851E8 /* male.png */; };
-		FEEBB0AD201D6117009851E8 /* unisex.png in Resources */ = {isa = PBXBuildFile; fileRef = FEEBB0AC201D6117009851E8 /* unisex.png */; };
-		FEEBB0AF201D6F2F009851E8 /* options.png in Resources */ = {isa = PBXBuildFile; fileRef = FEEBB0AE201D6F2F009851E8 /* options.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,7 +75,6 @@
 /* Begin PBXFileReference section */
 		059E7CFCEBFCD394217D8027 /* libPods-toilet finder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-toilet finder.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63D76C5A918E3D4DB4467F2 /* Pods-toilet finder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-toilet finder.release.xcconfig"; path = "Pods/Target Support Files/Pods-toilet finder/Pods-toilet finder.release.xcconfig"; sourceTree = "<group>"; };
-		FE0415D420294A8700272245 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		FE04CE102005D02D0023DA4A /* toilet finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "toilet finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE04CE132005D02D0023DA4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE04CE182005D02D0023DA4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -99,11 +100,19 @@
 		FE04CE602005D2090023DA4A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		FE081DE42016CF7D00ED32F1 /* infoWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoWindow.swift; sourceTree = "<group>"; };
 		FE0E8189200C43EF006ABDDD /* toilet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = toilet.json; sourceTree = SOURCE_ROOT; };
+		FE26DED4202FE0540068A7CF /* male.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = male.png; path = icons/male.png; sourceTree = "<group>"; };
+		FE26DED5202FE0540068A7CF /* options.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = options.png; path = icons/options.png; sourceTree = "<group>"; };
+		FE26DED6202FE0540068A7CF /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = icons/logo.png; sourceTree = "<group>"; };
+		FE26DED7202FE0540068A7CF /* female.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = female.png; path = icons/female.png; sourceTree = "<group>"; };
+		FE26DED8202FE0540068A7CF /* unimelb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = unimelb.png; path = icons/unimelb.png; sourceTree = "<group>"; };
+		FE26DED9202FE0540068A7CF /* guide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = guide.png; path = icons/guide.png; sourceTree = "<group>"; };
+		FE26DEDA202FE0550068A7CF /* unisex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = unisex.png; path = icons/unisex.png; sourceTree = "<group>"; };
+		FE26DEDB202FE0550068A7CF /* aurin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = aurin.png; path = icons/aurin.png; sourceTree = "<group>"; };
+		FE26DEE4202FE07F0068A7CF /* directions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = directions.png; path = icons/directions.png; sourceTree = "<group>"; };
+		FE3494E6202FFA0D000A1B11 /* guide.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = guide.jpg; sourceTree = "<group>"; };
 		FE4C1D4E2016EC9200D1073C /* infoWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = infoWindow.xib; sourceTree = "<group>"; };
 		FE594EA5200CA0C100B4C071 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FE6CE62F201DC39E00975F09 /* unimelb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unimelb.png; sourceTree = "<group>"; };
 		FE7A72652009BE7100583925 /* libGoogle-Maps-iOS-Utils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libGoogle-Maps-iOS-Utils.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE7B4CB2201DC11F00EB756F /* aurin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aurin.png; sourceTree = "<group>"; };
 		FE90CEC1200DA39000BBFAE6 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
 		FE90CEC3200DA3A400BBFAE6 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
 		FE90CEC4200DA3A400BBFAE6 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Pods/GoogleMaps/Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
@@ -120,11 +129,6 @@
 		FEC447912005D7D700070411 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		FEC447932005D7EB00070411 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		FEEA4D5D2019780200AAD249 /* OptionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsController.swift; sourceTree = "<group>"; };
-		FEEBB0A6201D5DA1009851E8 /* directions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = directions.png; sourceTree = "<group>"; };
-		FEEBB0A8201D610A009851E8 /* female.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = female.png; sourceTree = "<group>"; };
-		FEEBB0AA201D6110009851E8 /* male.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = male.png; sourceTree = "<group>"; };
-		FEEBB0AC201D6117009851E8 /* unisex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unisex.png; sourceTree = "<group>"; };
-		FEEBB0AE201D6F2F009851E8 /* options.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = options.png; sourceTree = "<group>"; };
 		FFBCF5E85D00FF0AAB595B47 /* Pods-toilet finder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-toilet finder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-toilet finder/Pods-toilet finder.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -282,14 +286,16 @@
 		FEEBB0A5201D5CF0009851E8 /* icon */ = {
 			isa = PBXGroup;
 			children = (
-				FEEBB0AE201D6F2F009851E8 /* options.png */,
-				FEEBB0A6201D5DA1009851E8 /* directions.png */,
-				FEEBB0A8201D610A009851E8 /* female.png */,
-				FE6CE62F201DC39E00975F09 /* unimelb.png */,
-				FE0415D420294A8700272245 /* logo.png */,
-				FEEBB0AA201D6110009851E8 /* male.png */,
-				FEEBB0AC201D6117009851E8 /* unisex.png */,
-				FE7B4CB2201DC11F00EB756F /* aurin.png */,
+				FE26DEDB202FE0550068A7CF /* aurin.png */,
+				FE26DED7202FE0540068A7CF /* female.png */,
+				FE26DED9202FE0540068A7CF /* guide.png */,
+				FE26DED6202FE0540068A7CF /* logo.png */,
+				FE26DED4202FE0540068A7CF /* male.png */,
+				FE26DED5202FE0540068A7CF /* options.png */,
+				FE26DED8202FE0540068A7CF /* unimelb.png */,
+				FE26DEDA202FE0550068A7CF /* unisex.png */,
+				FE26DEE4202FE07F0068A7CF /* directions.png */,
+				FE3494E6202FFA0D000A1B11 /* guide.jpg */,
 			);
 			name = icon;
 			sourceTree = "<group>";
@@ -406,19 +412,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE04CE1E2005D02D0023DA4A /* LaunchScreen.storyboard in Resources */,
-				FE6CE630201DC39E00975F09 /* unimelb.png in Resources */,
-				FEEBB0AD201D6117009851E8 /* unisex.png in Resources */,
+				FE26DEDE202FE0550068A7CF /* logo.png in Resources */,
 				FE4C1D4F2016EC9200D1073C /* infoWindow.xib in Resources */,
-				FE0415D520294A8800272245 /* logo.png in Resources */,
-				FEEBB0AB201D6111009851E8 /* male.png in Resources */,
-				FEEBB0A7201D5DA1009851E8 /* directions.png in Resources */,
+				FE26DEE0202FE0550068A7CF /* unimelb.png in Resources */,
+				FE26DEE1202FE0550068A7CF /* guide.png in Resources */,
+				FE26DEE5202FE07F0068A7CF /* directions.png in Resources */,
+				FE3494E7202FFA0D000A1B11 /* guide.jpg in Resources */,
+				FE26DEE2202FE0550068A7CF /* unisex.png in Resources */,
+				FE26DEDF202FE0550068A7CF /* female.png in Resources */,
 				FE04CE1B2005D02D0023DA4A /* Assets.xcassets in Resources */,
+				FE26DEDD202FE0550068A7CF /* options.png in Resources */,
+				FE26DEE3202FE0550068A7CF /* aurin.png in Resources */,
 				FE0E818A200C43EF006ABDDD /* toilet.json in Resources */,
-				FE7B4CB3201DC11F00EB756F /* aurin.png in Resources */,
+				FE26DEDC202FE0550068A7CF /* male.png in Resources */,
 				FE04CE192005D02D0023DA4A /* Main.storyboard in Resources */,
 				FE90CEC8200DA45500BBFAE6 /* GoogleMaps.bundle in Resources */,
-				FEEBB0AF201D6F2F009851E8 /* options.png in Resources */,
-				FEEBB0A9201D610A009851E8 /* female.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

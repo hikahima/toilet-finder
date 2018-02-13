@@ -22,6 +22,24 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQ4-vd-WFL">
+                                <rect key="frame" x="20" y="81" width="49" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title=" " image="directions.png"/>
+                                <connections>
+                                    <action selector="getDirections:" destination="BYZ-38-t0r" eventType="touchDown" id="2e1-IQ-Wj0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NX0-bx-rSQ">
+                                <rect key="frame" x="20" y="134" width="46" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Guide" image="guide.png"/>
+                                <connections>
+                                    <segue destination="URY-LL-mNd" kind="presentation" id="bj1-Qg-J51"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="WnQ-3j-uT8"/>
                     </view>
@@ -51,10 +69,70 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="directionsButton" destination="CQ4-vd-WFL" id="djL-PZ-0SD"/>
+                        <outlet property="guideButton" destination="NX0-bx-rSQ" id="wpv-3G-2YA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1198.5507246376812" y="35.869565217391305"/>
+        </scene>
+        <!--Guide-->
+        <scene sceneID="wps-A4-21r">
+            <objects>
+                <viewController title="Guide" id="URY-LL-mNd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dp2-ic-NFB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1790"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXQ-DP-HG8">
+                                <rect key="frame" x="0.0" y="33" width="69" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="&gt;&gt;Back"/>
+                                <connections>
+                                    <segue destination="GUV-GT-TQn" kind="unwind" unwindAction="unwindToMainWithSegue:" id="khQ-iM-uE5"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lmc-w4-snX">
+                                <rect key="frame" x="0.0" y="77" width="414" height="1713"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="zHY-QP-lTo">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1713"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1713" id="4TV-3x-m2W"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="zHY-QP-lTo" secondAttribute="bottom" id="3oX-uj-svy"/>
+                                    <constraint firstItem="zHY-QP-lTo" firstAttribute="top" secondItem="Lmc-w4-snX" secondAttribute="top" id="BoO-bf-581"/>
+                                    <constraint firstAttribute="trailing" secondItem="zHY-QP-lTo" secondAttribute="trailing" id="T2T-RH-Ws3"/>
+                                    <constraint firstItem="zHY-QP-lTo" firstAttribute="centerX" secondItem="Lmc-w4-snX" secondAttribute="centerX" id="Tci-9o-K9B"/>
+                                    <constraint firstItem="zHY-QP-lTo" firstAttribute="leading" secondItem="Lmc-w4-snX" secondAttribute="leading" id="gKd-o3-uBy"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66087633369999998" green="1" blue="0.71725322690000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Lmc-w4-snX" firstAttribute="leading" secondItem="tXQ-DP-HG8" secondAttribute="leading" id="22a-93-hIr"/>
+                            <constraint firstItem="tXQ-DP-HG8" firstAttribute="top" secondItem="NCh-jD-T2D" secondAttribute="top" constant="13" id="5eL-6B-xyr"/>
+                            <constraint firstItem="Lmc-w4-snX" firstAttribute="top" secondItem="tXQ-DP-HG8" secondAttribute="bottom" constant="8" symbolic="YES" id="Sgf-z1-NcU"/>
+                            <constraint firstItem="Lmc-w4-snX" firstAttribute="bottom" secondItem="NCh-jD-T2D" secondAttribute="bottom" id="YWZ-Ss-d43"/>
+                            <constraint firstItem="tXQ-DP-HG8" firstAttribute="leading" secondItem="dp2-ic-NFB" secondAttribute="leading" id="c52-Jp-lsW"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tXQ-DP-HG8" secondAttribute="trailing" constant="20" symbolic="YES" id="iFI-b6-ieP"/>
+                            <constraint firstAttribute="trailing" secondItem="Lmc-w4-snX" secondAttribute="trailing" id="kdg-ry-bD9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NCh-jD-T2D"/>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="414" height="1790"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="1790"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f55-QZ-Y0c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="GUV-GT-TQn" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1198" y="1442"/>
         </scene>
         <!--Options-->
         <scene sceneID="AhI-bL-9cJ">
@@ -180,6 +258,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="directions.png" width="45" height="45"/>
+        <image name="guide.jpg" width="1266" height="5443"/>
+        <image name="guide.png" width="48" height="48"/>
         <image name="options.png" width="45" height="45"/>
     </resources>
 </document>
