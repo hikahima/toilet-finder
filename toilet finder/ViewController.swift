@@ -39,21 +39,22 @@ class ViewController: UIViewController,CLLocationManagerDelegate,UISearchDisplay
             }
         }
     }
-    @IBAction func getCloset(_ sender: Any) {
+  
+    @IBAction func getClosest(_ sender: Any) {
         var currentPlace:CLLocationCoordinate2D = current.coordinate
-        var closetPlace:CLLocationCoordinate2D = current.coordinate
+        var closestPlace:CLLocationCoordinate2D = current.coordinate
         var minDistance:Double = 100000.0
         var index : Int = -1
         if selectedPlace != nil{
             currentPlace = (selectedPlace?.coordinate)!
         }
-    // Find the closet marker based on the geodistance between markers and user's current location.
+    // Find the closest marker based on the geodistance between markers and user's current location.
         for i in 0..<name.count{
             if allMarkers[i] != nil{
             let positions = CLLocationCoordinate2D(latitude:latitude[i], longitude: longitude[i])
             if allMarkers[i].map==mapView && GMSGeometryDistance(positions,currentPlace) < minDistance{
                 minDistance = GMSGeometryDistance(positions,currentPlace)
-                closetPlace = positions
+                closestPlace = positions
                 index = i
             }
         }
@@ -65,9 +66,9 @@ class ViewController: UIViewController,CLLocationManagerDelegate,UISearchDisplay
             alert.addAction(ok)
             self.present(alert,animated: true,completion: nil)
         }else{
-    // Draw the path from user's location to the closet toilet, and show the time walking.
-            drawRoutes(from: currentPlace,to: closetPlace)
-            showCost(from: currentPlace,to: closetPlace)
+    // Draw the path from user's location to the closest toilet, and show the time walking.
+            drawRoutes(from: currentPlace,to: closestPlace)
+            showCost(from: currentPlace,to: closestPlace)
         }
     }
   
@@ -171,7 +172,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate,UISearchDisplay
         searchController?.hidesNavigationBarDuringPresentation = false
  
         
-   // Add a lebel to show the time walking to the closet toilet.
+   // Add a lebel to show the time walking to the closest toilet.
         label.frame = CGRect(x: 0, y: 64, width: 414, height: 52)
         label.textAlignment = .center
         label.textColor = UIColor.blue
@@ -368,7 +369,7 @@ extension ViewController:GMSMapViewDelegate {
         print("Error: \(error)")
     }
     
-  // When user tap on mylocation button, move the camera and clear the previous results of closet button and user's selected location.
+  // When user tap on mylocation button, move the camera and clear the previous results of closest button and user's selected location.
     func didTapMyLocationButton(for mapView: GMSMapView) -> Bool {
         selectedPlace=nil
         DispatchQueue.main.async {
@@ -415,7 +416,7 @@ extension ViewController: GMSAutocompleteResultsViewControllerDelegate {
         selectedPlace=place
         selectPlace()
         }
-    //Clear the previous results of closet button.
+    //Clear the previous results of closest button.
         DispatchQueue.main.async {
             self.label.text = nil
         }

@@ -58,12 +58,12 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="done" id="ftd-lz-Xvo">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fqu-eU-8x0">
-                                <rect key="frame" x="336" y="4" width="58" height="36"/>
+                                <rect key="frame" x="326" y="4" width="68" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="20"/>
-                                <state key="normal" title="Closet"/>
+                                <state key="normal" title="Closest"/>
                                 <connections>
-                                    <action selector="getCloset:" destination="BYZ-38-t0r" eventType="touchDown" id="0f0-ZV-Op3"/>
+                                    <action selector="getClosest:" destination="BYZ-38-t0r" eventType="touchDown" id="Kw0-JA-ggM"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -78,10 +78,10 @@
             </objects>
             <point key="canvasLocation" x="1198.5507246376812" y="35.869565217391305"/>
         </scene>
-        <!--Guide-->
+        <!--Guide Controller-->
         <scene sceneID="wps-A4-21r">
             <objects>
-                <viewController title="Guide" id="URY-LL-mNd" sceneMemberID="viewController">
+                <viewController title="Guide Controller" id="URY-LL-mNd" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dp2-ic-NFB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -134,10 +134,10 @@
             </objects>
             <point key="canvasLocation" x="1198" y="1442"/>
         </scene>
-        <!--Options-->
+        <!--Options Controller-->
         <scene sceneID="AhI-bL-9cJ">
             <objects>
-                <viewController title="Options" id="TKn-QV-BR2" customClass="OptionsController" customModule="toilet_finder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Options Controller" id="TKn-QV-BR2" customClass="OptionsController" customModule="toilet_finder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sER-gu-ilw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
